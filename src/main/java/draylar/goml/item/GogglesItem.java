@@ -5,6 +5,7 @@ import draylar.goml.api.ClaimUtils;
 import draylar.goml.api.WorldParticleUtils;
 import eu.pb4.polymer.core.api.item.PolymerItem;
 import net.minecraft.block.BlockState;
+import net.minecraft.component.DataComponentTypes;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EquipmentSlot;
@@ -27,7 +28,7 @@ import java.util.stream.Collectors;
 
 public class GogglesItem extends ArmorItem implements PolymerItem {
     public GogglesItem(Settings settings) {
-        super(ArmorMaterials.IRON, EquipmentType.HELMET, settings.maxDamage(-1));
+        super(ArmorMaterials.IRON, EquipmentType.HELMET, settings.component(DataComponentTypes.MAX_DAMAGE, null));
     }
 
     @Override
