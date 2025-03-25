@@ -17,6 +17,7 @@ import net.minecraft.particle.BlockStateParticleEffect;
 import net.minecraft.particle.ParticleTypes;
 import net.minecraft.registry.Registries;
 import net.minecraft.server.network.ServerPlayerEntity;
+import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.registry.Registry;
@@ -26,14 +27,14 @@ import xyz.nucleoid.packettweaker.PacketContext;
 
 import java.util.stream.Collectors;
 
-public class GogglesItem extends ArmorItem implements PolymerItem {
+public class GogglesItem extends Item implements PolymerItem {
     public GogglesItem(Settings settings) {
-        super(ArmorMaterials.IRON, EquipmentType.HELMET, settings.component(DataComponentTypes.MAX_DAMAGE, null));
+        super(settings.armor(ArmorMaterials.IRON, EquipmentType.HELMET).component(DataComponentTypes.MAX_DAMAGE, null));
     }
 
     @Override
-    public void inventoryTick(ItemStack stack, World world, Entity entity, int slot, boolean selected) {
-        if (entity instanceof ServerPlayerEntity player && (selected || player.getEquippedStack(EquipmentSlot.HEAD) == stack || player.getEquippedStack(EquipmentSlot.OFFHAND) == stack)) {
+    public void inventoryTick(ItemStack stack, ServerWorld world, Entity entity, @Nullable EquipmentSlot slot) {
+        if (entity instanceof ServerPlayerEntity player && slot != null) {
             if (player.age % 70 == 0) {
                 var distance = player.getServer().getPlayerManager().getViewDistance() * 16;
 
