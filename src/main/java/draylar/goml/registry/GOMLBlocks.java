@@ -47,6 +47,15 @@ public class GOMLBlocks {
     public static final Pair<ClaimAugmentBlock, Item> EXPLOSION_CONTROLLER = register("explosion_controller", (s) -> new ExplosionControllerAugmentBlock(s.hardness(10).resistance(3600000.0F), GOMLTextures.EXPLOSION_CONTROLLER), 2);
 
     public static final Pair<ClaimAugmentBlock, Item> FORCE_FIELD = register("force_field", (s) -> new ForceFieldAugmentBlock(s.hardness(10).resistance(3600000.0F), GOMLTextures.FORCE_FIELD), 2);
+    //forked addon:
+    public static final Pair<ClaimAugmentBlock, Item> SATURATION_ZONE = register("saturation_zone", (s) -> new SaturationZoneAugmentBlock(s.hardness(10).resistance(3600000.0F), GOMLTextures.CHAOS_ZONE), 2);
+    public static final Pair<ClaimAugmentBlock, Item> HASTE_ZONE = register("haste_zone", (s) -> new MinersZoneAugmentBlock(s.hardness(10).resistance(3600000.0F), GOMLTextures.CHAOS_ZONE), 2);
+    public static final Pair<ClaimAugmentBlock, Item> MARKET_ZONE = register("market_zone", (s) -> new ClaimAugmentBlock(s.hardness(10).resistance(3600000.0F), GOMLTextures.CHAOS_ZONE), 2);
+    public static final Pair<ClaimAugmentBlock, Item> HELL_PROTECTION_ZONE = register("hells_protection_zone", (s) -> new HellsProtectionAugmentBlock(s.hardness(10).resistance(3600000.0F), GOMLTextures.CHAOS_ZONE), 2);
+    public static final Pair<ClaimAugmentBlock, Item> JUMP_ZONE = register("jump_zone", (s) -> new JumpBoostAugmentBlock(s.hardness(10).resistance(3600000.0F), GOMLTextures.CHAOS_ZONE), 2);
+    public static final Pair<ClaimAugmentBlock, Item> PROTECTION_ZONE = register("protection_zone", (s) -> new ProtectionAugmentBlock(s.hardness(10).resistance(3600000.0F), GOMLTextures.CHAOS_ZONE), 2);
+    public static final Pair<ClaimAugmentBlock, Item> SPEEDY_ZONE = register("speedy_zone", (s) -> new SpeedyZoneAugmentBlock(s.hardness(10).resistance(3600000.0F), GOMLTextures.CHAOS_ZONE), 2);
+
 
     private static Pair<ClaimAnchorBlock, Item> register(String name, IntSupplier radius, float hardness, String texture) {
         var id = GetOffMyLawn.id(name);

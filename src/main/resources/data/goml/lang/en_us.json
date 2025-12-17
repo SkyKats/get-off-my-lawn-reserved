@@ -47,6 +47,34 @@
   "block.goml.greeter.description.1": "Sends message to players",
   "block.goml.greeter.description.2": "entering your claim.",
 
+  "block.goml.saturation_zone": "Saturation Zone",
+  "block.goml.saturation_zone.description.1": "Gives saturation to players",
+  "block.goml.saturation_zone.description.2": "within a claim.",
+
+  "block.goml.speedy_zone": "Speedy Zone",
+  "block.goml.speedy_zone.description.1": "Gives speed to players",
+  "block.goml.speedy_zone.description.2": "within a claim.",
+
+  "block.goml.haste_zone": "Miners Zone",
+  "block.goml.haste_zone.description.1": "Gives haste 1 to players",
+  "block.goml.haste_zone.description.2": "within the claim.",
+
+  "block.goml.protection_zone": "Protection Zone",
+  "block.goml.protection_zone.description.1": "Gives resistance to players",
+  "block.goml.protection_zone.description.2": "within the claim.",
+
+  "block.goml.jump_zone": "Jumping Zone",
+  "block.goml.jump_zone.description.1": "Gives jumpboost 1 to players",
+  "block.goml.jump_zone.description.2": "within the claim.",
+
+  "block.goml.market_zone": "Market Zone",
+  "block.goml.market_zone.description.1": "Eases the villages and reduces the prices",
+  "block.goml.market_zone.description.2": "within the claim. WIP&NYP",
+
+  "block.goml.hells_protection_zone": "Hells protection Zone",
+  "block.goml.hells_protection_zone.description.1": "Uses the power of the nether to protect",
+  "block.goml.hells_protection_zone.description.2": "those in the claim from fire damage",
+
   "block.goml.pvp_arena": "PvP Arena",
   "block.goml.pvp_arena.description.1": "Toggle ability for players",
   "block.goml.pvp_arena.description.2": "to fight between each other.",
