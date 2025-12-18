@@ -7,9 +7,9 @@ import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
 
-public class HellsProtectionAugmentBlock extends SelectiveClaimAugmentBlock {
-    public HellsProtectionAugmentBlock(AbstractBlock.Settings settings, String texture) {
-        super("hell_protection_zone", settings, texture);
+public class NetherProtectionAugmentBlock extends SelectiveClaimAugmentBlock {
+    public NetherProtectionAugmentBlock(AbstractBlock.Settings settings, String texture) {
+        super("nether_protection_zone", settings, texture);
     }
 
     @Override

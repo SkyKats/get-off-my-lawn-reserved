@@ -51,7 +51,7 @@ public class GOMLBlocks {
     public static final Pair<ClaimAugmentBlock, Item> SATURATION_ZONE = register("saturation_zone", (s) -> new SaturationZoneAugmentBlock(s.hardness(10).resistance(3600000.0F), GOMLTextures.CHAOS_ZONE), 2);
     public static final Pair<ClaimAugmentBlock, Item> HASTE_ZONE = register("haste_zone", (s) -> new MinersZoneAugmentBlock(s.hardness(10).resistance(3600000.0F), GOMLTextures.CHAOS_ZONE), 2);
     public static final Pair<ClaimAugmentBlock, Item> MARKET_ZONE = register("market_zone", (s) -> new ClaimAugmentBlock(s.hardness(10).resistance(3600000.0F), GOMLTextures.CHAOS_ZONE), 2);
-    public static final Pair<ClaimAugmentBlock, Item> HELL_PROTECTION_ZONE = register("hells_protection_zone", (s) -> new HellsProtectionAugmentBlock(s.hardness(10).resistance(3600000.0F), GOMLTextures.CHAOS_ZONE), 2);
+    public static final Pair<ClaimAugmentBlock, Item> HELL_PROTECTION_ZONE = register("nether_protection_zone", (s) -> new NetherProtectionAugmentBlock(s.hardness(10).resistance(3600000.0F), GOMLTextures.CHAOS_ZONE), 2);
     public static final Pair<ClaimAugmentBlock, Item> JUMP_ZONE = register("jump_zone", (s) -> new JumpBoostAugmentBlock(s.hardness(10).resistance(3600000.0F), GOMLTextures.CHAOS_ZONE), 2);
     public static final Pair<ClaimAugmentBlock, Item> PROTECTION_ZONE = register("protection_zone", (s) -> new ProtectionAugmentBlock(s.hardness(10).resistance(3600000.0F), GOMLTextures.CHAOS_ZONE), 2);
     public static final Pair<ClaimAugmentBlock, Item> SPEEDY_ZONE = register("speedy_zone", (s) -> new SpeedyZoneAugmentBlock(s.hardness(10).resistance(3600000.0F), GOMLTextures.CHAOS_ZONE), 2);

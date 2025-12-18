@@ -71,9 +71,9 @@
   "block.goml.market_zone.description.1": "Eases the villages and reduces the prices",
   "block.goml.market_zone.description.2": "within the claim. WIP&NYP",
 
-  "block.goml.hells_protection_zone": "Hells protection Zone",
-  "block.goml.hells_protection_zone.description.1": "Uses the power of the nether to protect",
-  "block.goml.hells_protection_zone.description.2": "those in the claim from fire damage",
+  "block.goml.nether_protection_zone": "Nether protection Zone",
+  "block.goml.nether_protection_zone.description.1": "Uses the power of the nether to protect",
+  "block.goml.nether_protection_zone.description.2": "those in the claim from fire damage",
 
   "block.goml.pvp_arena": "PvP Arena",
   "block.goml.pvp_arena.description.1": "Toggle ability for players",
